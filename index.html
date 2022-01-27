@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravity</title>
+    <link rel="stylesheet" href="node_modules\bulma\css\bulma.css">
+    <script src="services/jquery.js"></script>
+    <script src="services/bg.js"></script>
+    <script src="services/name.js"></script>
+    <script src="services/weather.js"></script>
+    <script src="services/quotes.js"></script>
+    <script src="services/todo.js"></script>
+
+    <style>
+        .mainbg {
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .trans {
+            height: 100vh;
+            background-color: #0000007a;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainbg">
+        <div class="trans">
+            <section class="section">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column is-3" id="quotes">
+                            <p class="has-text-light"></p>
+                        </div>
+                        <div class="column is-7"></div>
+                        <div class="column is-2" id="weather">
+                            <p class="has-text-white has-text-weight-bold">weather</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="columns is-centered">
+                        <div class="column is-half" id="name">
+                            <div class="control">
+                                <input class="input is-large is-focused is-primary is-rounded" type="text"
+                                    placeholder="Kaun ho tum?">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="columns is-centered">
+                        <div class="column is-half">
+                            <div class="control">
+                                <input id="todo" class="input is-rounded" placeholder="Any plan to work?">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns is-centered">
+                        <div class="column is-half ml-6">
+                            <div class="block">
+                                <ul id="todoSection"></ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

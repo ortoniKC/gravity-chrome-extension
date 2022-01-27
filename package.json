@@ -1,0 +1,16 @@
+{
+  "name": "gravity",
+  "version": "1.0.0",
+  "description": "Kind of Momentum Chrome extension",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Koushik Chatterjee [LetCode]",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chrome": "0.0.176",
+    "bulma": "0.9.3"
+  }
+}
